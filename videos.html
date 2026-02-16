@@ -1,0 +1,79 @@
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<!--Skip to main-->
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+<!--Nav bar-->
+  <div class="navbar">    
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="videos.html" class="nav-item">Clips</a>
+      <a href="reactions.html" class="nav-item"> Reactions</a>
+    </div>
+      <div class="nav-item hamburger">☰</div>
+  </div>
+
+<!--Main Content-->
+<main id="main" class="content">
+  <h1>Clips from Bad Bunny’s Super Bowl LX halftime show</h1>
+
+ <p class="dek">
+      This page collects a few key video links and embeds. I used clips because halftime shows
+      are visual and it’s easier to understand what people are reacting to when you can watch it.
+    </p>
+
+    <h2>Full performance</h2>
+  <figure class="card">
+    <div class="video-wrap">
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/G6FuWd4wNd8"
+        title="Bad Bunny Apple Music Super Bowl LX Halftime Show full performance"
+        allowfullscreen>
+      </iframe>
+    </div>
+<!--Accessible-->
+    <figcaption class="caption">
+      Caption: Full halftime show video. Source: YouTube.
+      Official NFL page (same performance): 
+      <a href="https://www.nfl.com/videos/bad-bunny-s-apple-music-super-bowl-halftime-show" target="_blank" rel="noopener">NFL.com</a>.
+      Captions: Use the CC button in the player.
+    </figcaption>
+  </figure>
+
+     <h2>Highlight clip</h2>
+  <figure class="card">
+    <div class="video-wrap">
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/srlJK47DzEU"
+        title="Bad Bunny Super Bowl halftime show highlight clip"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <figcaption class="caption">
+      Caption: Short highlight clip. Source: YouTube (AP News upload).
+      Captions: Use the CC button in the player.
+    </figcaption>
+  </figure>
+
+  <h2>Footnotes</h2>
+  <ol class="footnotes">
+    <li>YouTube full show link: https://www.youtube.com/watch?v=G6FuWd4wNd8</li>
+    <li>NFL official hosting page: https://www.nfl.com/videos/bad-bunny-s-apple-music-super-bowl-halftime-show</li>
+    <li>Highlight clip link: https://www.youtube.com/watch?v=srlJK47DzEU</li>
+  </ol>
+</main>
+  </div>
+
+  <!--Ensure nav buttons work on Mobile-->
+  <script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
+</body>

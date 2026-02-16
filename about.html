@@ -1,0 +1,25 @@
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <div class="navbar">    
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="videos.html" class="nav-item">Clips</a>
+      <a href="reactions.html" class="nav-item"> Reactions</a>
+    </div>
+      <div class="nav-item hamburger">☰</div>
+  </div>
+<h1> Website produced by Milan Afshar.</h1>
+<p> Milan Afshar is a senior majoring in Journalism at Northwestern's Medill School of Journalism. Milan holds a minor in Business Institutions with experience in finance. He plans to continue his career in finance following his graduation in June of 2026. 
+
+  <p> This website was designed to provide an interactive experience of Bad Bunny's most recent halftime show. </p>
+ 
+  <!--Ensure nav buttons work on Mobile-->
+  <script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
+</body>

@@ -1,0 +1,82 @@
+<head>
+   <title>Reactions | Bad Bunny Halftime Show</title>
+  <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <!--To skip to main content-->
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="navbar">    
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="videos.html" class="nav-item">Clips</a>
+      <a href="reactions.html" class="nav-item"> Reactions</a>
+    </div>
+      <div class="nav-item hamburger">☰</div>
+  </div>
+<!--Main Content-->
+   <div class="content" id="main">
+    <h1>Social reactions</h1>
+  
+  <!--Description of page-->
+  <p class="dek">
+      This is a beginner-friendly coded page by using links and a few embeds. The goal is to show how the halftime show
+      became a conversation online right after it aired.
+    </p>  
+
+  <p>
+    These are embedded reactions so they are visible on the page. If an embed fails to load,
+    the quoted text still appears as a fallback.
+  </p>
+
+  <div class="card">
+    <h2>Reaction 1</h2>
+    <blockquote class="twitter-tweet">
+      <p>
+        "Did I understand a single word of it? I did not. Was it a vibe? It was.''
+      </p>
+      <a href="https://twitter.com/JJWatt/status/2020672302229451255">Source post</a>
+    </blockquote>
+    <p class="caption">Source: X (@JJWatt) post linked above.</p>
+  </div>
+
+  <div class="card">
+    <h2>Reaction 2</h2>
+    <blockquote class="twitter-tweet">
+      <p>"Thank you Benito"</p>
+      <a href="https://twitter.com/jalenbrunson1/status/2020672209635717457">Source post</a>
+    </blockquote>
+    <p class="caption">Source: X (@Jalenbrunson1) post linked above.</p>
+  </div>
+
+  <div class="card">
+    <h2>Reaction 3</h2>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">"BAD BUNNY‼️‼️‼️"</p>
+      <a href="https://twitter.com/spidadmitchell/status/2020670835061563709">Source post</a>
+    </blockquote>
+    <p class="caption">Source: X (@spidadmitchell) post linked above.</p>
+  </div>
+
+<!--Sources-->
+<h2>Footnotes</h2>
+  <ol class="footnotes">
+    <li>ESPN roundup that compiled multiple reactions: https://www.espn.com/nfl/story/_/id/47868552/bad-bunny-super-bowl-lx-half-social-media-new-england-patriots-seattle-seahawks</li>
+    <li>JJ Watt post: https://twitter.com/JJWatt/status/2020672302229451255</li>
+    <li>Jalen Brunson post: https://twitter.com/jalenbrunson1/status/2020672209635717457</li>
+    <li>Donovan Mitchell post: https://twitter.com/spidadmitchell/status/2020670835061563709</li>
+  </ol>
+</main>
+
+<!-- Scripts that make embeds visible -->
+<script async src="https://platform.twitter.com/widgets.js"></script>
+<script async src="https://www.instagram.com/embed.js"></script>
+
+  <!--Ensure nav buttons work on Mobile-->
+
+  <script>
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active');
+    };
+  </script>
+</body>
