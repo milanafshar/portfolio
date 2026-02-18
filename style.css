@@ -269,3 +269,46 @@ figure .caption {
     max-width: 95%;     /* prevents edge touching */
   }
 }
+
+/* The tweet itself */
+.twitter-tweet {
+  max-width: 550px !important;   /* keeps tweet readable */
+  margin: 16px auto !important;  /* centers horizontally */
+}
+
+/* The container card holding the tweet */
+.card blockquote.twitter-tweet {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Small phones: allow full width */
+@media (max-width: 600px) {
+  .twitter-tweet {
+    max-width: 100% !important;
+    margin: 12px 0 !important;
+  }
+}
+
+/* Java Scipt */
+/* Interactive Button */
+.reveal-btn {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* hidden by default */
+.hidden-text {
+  display: none;
+  background: #f4f4f4;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}

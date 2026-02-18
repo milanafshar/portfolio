@@ -1,7 +1,26 @@
 <head>
   <link href="style.css" type="text/css" rel="stylesheet" />
   <title>Halftime Show - Overview</title>
+  <meta name="Author" content="Milan Afshar">
+<meta name="description" content="An interactive journalism story exploring Bad Bunny’s Super Bowl halftime show through video clips and live reactions.">
+
+<!-- Open Graph (link previews when shared) -->
+<meta property="og:title" content="Bad Bunny Halftime Show — Interactive Story">
+<meta property="og:description" content="Watch clips and explore reactions to Bad Bunny’s halftime show in this interactive article.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://milanafshar.github.io/portfolio/overview.html">
+<meta property="og:image" content="https://milanafshar.github.io/portfolio/images/un-verano-sin-ti.jpg">
+
+<!-- Twitter preview -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bad Bunny Halftime Show — Interactive Story">
+<meta name="twitter:description" content="Interactive coverage with clips and reactions.">
+<meta name="twitter:image" content="https://milanafshar.github.io/portfolio/images/un-verano-sin-ti.jpg">
 </head>
+
+
+
+
 <body>
     <!--Nav Bar functions-->
   <div class="navbar">    
@@ -42,6 +61,19 @@
       a clear cultural point of view. The performance quickly moved beyond the stadium, it became a debate online about music,
       identity, and who halftime shows are “for.”
     </p>
+
+    <h2>What people debated about the performance</h2>
+<button class="reveal-btn" onclick="toggleText('analysis1')">
+  Click to read analysis
+</button>
+
+<div id="analysis1" class="hidden-text">
+  <p>
+    Many reactions focused less on the music itself and more on language and symbolism. The field was recreated into Bad Bunny's hometown in Puerto Rico. 
+    Some viewers treated Spanish lyrics as a barrier, while others said
+    that was the point, the performance did not try to translate itself.
+  </p>
+</div>
 
     <h2>Watch the clips</h2>
 
@@ -153,7 +185,18 @@
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
+<!--Java Scipt-->
+<script>
+  function toggleText(id) {
+    const section = document.getElementById(id);
 
+    if (section.style.display === "block") {
+      section.style.display = "none";
+    } else {
+      section.style.display = "block";
+    }
+  }
+</script>
 
 
 <!--Ensure nav buttons work on Mobile-->
