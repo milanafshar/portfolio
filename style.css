@@ -312,3 +312,35 @@ figure .caption {
   border-radius: 10px;
   margin-bottom: 12px;
 }
+
+
+/* Center X/Twitter embeds reliably */
+.tweet-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* The original blockquote (before X transforms it) */
+.tweet-center .twitter-tweet {
+  margin: 16px 0 !important;
+}
+
+/* The rendered tweet element X injects */
+.tweet-center .twitter-tweet-rendered {
+  margin: 16px 0 !important;
+}
+
+/* Keep embeds a reasonable width on desktop */
+.tweet-center .twitter-tweet,
+.tweet-center .twitter-tweet-rendered {
+  max-width: 550px !important;
+  width: 100% !important;
+}
+
+/* Mobile: let it go full width */
+@media (max-width: 600px) {
+  .tweet-center .twitter-tweet,
+  .tweet-center .twitter-tweet-rendered {
+    max-width: 100% !important;
+  }
+}
