@@ -314,7 +314,7 @@ figure .caption {
 }
 
 
-/* Center X/Twitter embeds reliably */
+/* Center X/Twitter embeds */
 .tweet-center {
   display: flex;
   justify-content: center;
